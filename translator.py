@@ -124,7 +124,7 @@ Output ONLY the translation, no explanations.
         genai.configure(api_key=self.gemini_api_key)
         
         model = genai.GenerativeModel(
-            'gemini-1.5-flash',
+            "gemini-3-flash-preview",
             system_instruction=self.system
         )
         
