@@ -100,7 +100,7 @@ Output ONLY the translation, no explanations.
             raise Exception("Grok API key not configured")
         
         response = self.grok_client.chat.completions.create(
-            model="grok-beta",
+            model="grok-4-1-fast-non-reasoning",
             messages=[
                 {"role": "system", "content": self.system},
                 {"role": "user", "content": prompt}
